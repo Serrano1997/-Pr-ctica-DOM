@@ -103,3 +103,14 @@ function sortProducts(criteria) {
 
   displayProducts(sortedProducts);
 }
+document.querySelector('#busqueda').addEventListener('input', (e) => {
+  searchProducts(e.target.value);
+});
+
+document.querySelector('#orden').addEventListener('change', (e) => {
+  sortProducts(e.target.value);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayProducts(products);
+});
