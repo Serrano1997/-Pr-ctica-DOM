@@ -83,3 +83,23 @@ function searchProducts(query) {
   );
   displayProducts(filteredProducts);
 }
+function sortProducts(criteria) {
+  let sortedProducts = [...products];
+  
+  switch (criteria) {
+    case 'precio-asc':
+      sortedProducts.sort((a, b) => a.price - b.price);
+      break;
+    case 'precio-desc':
+      sortedProducts.sort((a, b) => b.price - a.price);
+      break;
+    case 'nombre-asc':
+      sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+    case 'nombre-desc':
+      sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+      break;
+  }
+
+  displayProducts(sortedProducts);
+}
