@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+  <html lang="es">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramienta MasterPro</title>
+  <link rel="icon" href="./Assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./Assets/Logo.png" alt="Logo de la Tienda">
+      <H1>Herramientas MasterPro</H1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="cuenta-carrito">
+    <ul>
+      <li><a href="#mi-cuenta">👤 Mi cuenta</a></li>
+      <li><a href="#carrito">🛒 Carrito</a></li>
+    </ul>
+  </aside>
+  <main>
+    <aside class="filtros">
+      <h2>Filtrar y Ordenar</h2>
+      <div class="filtro-busqueda">
+        <label for="busqueda">Buscar:</label>
+        <input type="text" id="busqueda" placeholder="Buscar productos...">
+      </div>
+      <div class="filtro-orden">
+        <label for="orden">Ordenar por:</label>
+        <select id="orden">
+          <option value="precio-asc">Precio: Menor a mayo</option>
+          <option value="precio-desc">Precio: Mayor a meno</option>
+          <option value="nombre-asc">Nombre: A-Z</option>
+          <option value="nombre-desc">Nombre: Z-A</option>
+        </select>
+      </div>
+    </aside>
+    <h2>Productos Destacados</h2>
+    <section id="productos" class="productos">
+      <div class="producto">
+        <img src="./Assets/Productos/martillohierro.webp" alt="Martillo de Acero">
+        <h3>Martillo de Acero</h3>
+        <p>Precio: $25</p>
+        <a href="https://totherramienta.com/products/martillo-profesional-con-mango-de-fibra-2kg?_pos=3&_sid=78c1d8cab&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/desantornillador.webp" alt="Destornillador">
+        <h3>Destornillador</h3>
+        <p>Precio: $10</p>
+        <a href="https://totherramienta.com/products/juego-14-destornilladores-plano-estrella?_pos=2&_sid=1545f4d39&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/juegodellaves.webp" alt="Juego de Llaves">
+        <h3>Juego de Llaves</h3>
+        <p>Precio: $30</p>
+        <a href="https://totherramienta.com/products/juego-llaves-combinadas-xxl-bgs-34-50mm?_pos=12&_sid=5734ce39a&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/sierracircular.webp" alt="Sierra circular">
+        <h3>Sierra circular</h3>
+        <p>Precio: $18</p>
+        <a href="https://totherramienta.com/products/sierra-electrica-circular-brushless?_pos=3&_sid=273c0b59f&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/taladroperforador.webp" alt="Taladro Perforador">
+        <h3>Taladro Perforador</h3>
+        <p>Precio: $50</p>
+        <a href="https://totherramienta.com/products/taladro-percutor-2-velocidades-1?_pos=2&_sid=044306fde&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/Alicatesterminales.webp" alt="Alicates Terminales">
+        <h3>Alicates Terminales</h3>
+        <p>Precio: $15</p>
+        <a href="https://totherramienta.com/products/alicates-terminales-no-aislados-8-3-4?_pos=1&_sid=db45c8d99&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/cintametrica.webp" alt="Cinta Métrica">
+        <h3>Cinta Métrica</h3>
+        <p>Precio: $8</p>
+        <a href="https://totherramienta.com/products/jbm-53026-cinta-metrica-5m-x-25mm?_pos=2&_sid=54bc17e4b&_ss=r"
+          class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="./Assets/Productos/lijadoraelectrica.avif" alt="Lijadora Eléctrica">
+        <h3>Lijadora Eléctrica</h3>
+        <p>Precio: $40</p>
+        <a href="https://totherramienta.com/products/lijadora-rotativa-20v?_pos=3&_sid=71ac4b35a&_ss=r" class="btn">Ver
+          más</a>
+      </div>
+    </section>
+    <section id="ofertas" class="ofertas">
+      <h2>Ofertas Especiales</h2>
+      <ul>
+        <li>
+          <img src="./Assets/Productos/taladroelectricos.webp" alt="Taladro Eléctrico">
+          <h3>Taladro Eléctrico</h3>
+          <p>Antes: $50 | Ahora: $40</p>
+          <a href="https://totherramienta.com/products/taladro-percutor-20v-50nm?_pos=1&_sid=044306fde&_ss=r"
+            class="btn">Comprar</a>
+        </li>
+        <li>
+          <img src="./Assets/Productos/Alicates.webp" alt="Alicates">
+          <h3>Alicates</h3>
+          <p>Antes: $20 | Ahora: $15</p>
+          <a href="https://totherramienta.com/products/jbm-52050-set-de-alicates-para-abrazaderas?_pos=3&_sid=0866b9093&_ss=r"
+            class="btn">Comprar</a>
+        </li>
+      </ul>
+    </section>
+    <section id="contacto" class="contacto">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Herramientas MasterPro. Todos los derechos reservados.</p>
+    <div class="social-media">
+      <a href="https://twitter.com"> Twitter</a>
+      <a href="https://facebook.com">Facebook</a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
