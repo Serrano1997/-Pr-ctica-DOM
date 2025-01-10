@@ -77,3 +77,9 @@ function displayProducts(products) {
     productContainer.appendChild(productElement);
   });
 }
+function searchProducts(query) {
+  const filteredProducts = products.filter(product => 
+    product.name.toLowerCase().includes(query.toLowerCase())
+  );
+  displayProducts(filteredProducts);
+}
